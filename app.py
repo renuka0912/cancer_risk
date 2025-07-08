@@ -3,25 +3,20 @@ from datetime import datetime, timedelta
 import joblib
 
 app = Flask(__name__)
-
-# Load models and label encoders
-model_breast = joblib.load("breast_model.pkl")
-model_cervical = joblib.load("cervical_model.pkl")
-model_colorectal = joblib.load("colorectal_model.pkl")
-
-le_breast = joblib.load("le_breast.pkl")
-le_cervical = joblib.load("le_cervical.pkl")
-le_colorectal = joblib.load("le_colorectal.pkl")
+model_breast=joblib.load("breast_model.pkl")
+model_cervical=joblib.load("cervical_model.pkl")
+model_colorectal=joblib.load("colorectal_model.pkl")
+le_breast=joblib.load("le_breast.pkl")
+le_cervical=joblib.load("le_cervical.pkl")
+le_colorectal=joblib.load("le_colorectal.pkl")
 
 def model_predict(age, gender, family_history, lifestyle):
-    gender_num = 0 if gender.lower() == "male" else 1
-    has_fh = 0 if family_history.strip().lower() == "none" else 1
+    gender_num = 0 if gender.lower()=="male" else 1
+    has_fh = 0 if family_history.strip().lower()=="none" else 1
     is_smoker = 1 if "smoker" in lifestyle.lower() else 0
     is_obese = 1 if "obese" in lifestyle.lower() else 0
     uses_alcohol = 1 if "alcohol" in lifestyle.lower() else 0
-
     X = [[age, gender_num, has_fh, is_smoker, is_obese, uses_alcohol]]
-
     breast_pred = le_breast.inverse_transform(model_breast.predict(X))[0]
     cervical_pred = le_cervical.inverse_transform(model_cervical.predict(X))[0]
     colorectal_pred = le_colorectal.inverse_transform(model_colorectal.predict(X))[0]
@@ -48,13 +43,10 @@ def submit():
     gender = request.form.get('gender')
     family_history = request.form.get('family_history', 'None')
     lifestyle = request.form.get('lifestyle', '')
-
     last_breast = request.form.get('last_breast')
     last_cervical = request.form.get('last_cervical')
     last_colorectal = request.form.get('last_colorectal')
-
     breast_risk, cervical_risk, colorectal_risk = model_predict(age, gender, family_history, lifestyle)
-
     breast_next = next_screening_date(last_breast, 1)
     cervical_next = next_screening_date(last_cervical, 2)
     colorectal_next = next_screening_date(last_colorectal, 3)
