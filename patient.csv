@@ -1,0 +1,31 @@
+patient_id,name,age,gender,family_history,lifestyle,last_breast_screen,last_cervical_screen,last_colorectal_screen,risk_breast,risk_cervical,risk_colorectal
+1,John Doe,55,Male,Colon cancer,Smoker|Alcohol,2023-07-03,2022-01-15,2020-06-20,Low,Low,Medium
+2,Jane Smith,45,Female,Breast cancer,None,2024-01-10,2023-06-15,2023-12-01,Medium,High,Medium
+3,Bob Johnson,50,Male,None,Obese,2022-11-30,2021-09-22,2024-02-15,Low,Medium,Low
+4,Alice Brown,35,Female,Ovarian cancer,Smoker|Obese,2024-03-01,2024-04-12,2023-10-30,High,High,Medium
+5,Michael Lee,60,Male,Colon cancer,Smoker,2023-05-20,2021-12-10,2022-11-05,Medium,Low,High
+6,Linda Green,42,Female,Breast cancer,None,2023-08-14,2023-07-18,2023-03-20,Medium,High,Medium
+7,David White,47,Male,None,Alcohol,2022-10-05,2022-06-12,2023-08-25,Low,Low,Medium
+8,Susan Clark,38,Female,Ovarian cancer,Smoker|Obese,2024-02-10,2024-01-14,2023-07-30,High,High,Medium
+9,Robert Hall,53,Male,Colon cancer,Smoker,2023-03-22,2022-11-05,2022-09-10,Low,Low,High
+10,Karen Allen,44,Female,Breast cancer,Obese,2023-09-01,2023-05-20,2023-04-25,Medium,High,Medium
+11,Mark Young,58,Male,None,Smoker,2023-04-12,2021-08-30,2020-12-10,Low,Low,Medium
+12,Emily King,36,Female,Ovarian cancer,None,2024-05-10,2024-06-18,2023-11-05,High,High,Medium
+13,James Wright,49,Male,Colon cancer,Obese,2023-07-25,2022-03-14,2023-01-22,Low,Medium,Medium
+14,Patricia Scott,41,Female,Breast cancer,Smoker,2023-11-10,2023-08-05,2023-09-12,Medium,High,Medium
+15,Charles Harris,54,Male,None,Alcohol,2022-12-01,2022-02-18,2023-03-03,Low,Low,Medium
+16,Jessica Lewis,39,Female,Ovarian cancer,Obese,2024-04-05,2024-03-11,2023-10-15,High,High,Medium
+17,Thomas Walker,57,Male,Colon cancer,Smoker,2023-06-14,2021-11-20,2022-08-30,Low,Low,High
+18,Sarah Hall,43,Female,Breast cancer,None,2023-10-20,2023-06-01,2023-07-22,Medium,High,Medium
+19,Daniel Allen,48,Male,None,Obese,2023-01-17,2022-07-14,2023-05-18,Low,Medium,Medium
+20,Laura Young,37,Female,Ovarian cancer,Smoker,2024-03-15,2024-04-25,2023-12-01,High,High,Medium
+21,Matthew King,52,Male,Colon cancer,Alcohol,2023-08-30,2022-05-12,2022-11-27,Low,Low,High
+22,Michelle Scott,46,Female,Breast cancer,Obese,2023-12-05,2023-07-29,2023-06-16,Medium,High,Medium
+23,Steven Wright,55,Male,None,Smoker,2023-05-10,2021-10-22,2022-09-15,Low,Low,Medium
+24,Angela Green,40,Female,Ovarian cancer,None,2024-01-20,2024-02-15,2023-11-10,High,High,Medium
+25,Joshua Lee,51,Male,Colon cancer,Smoker,2023-09-14,2022-03-27,2023-01-30,Low,Low,High
+26,Amanda Brown,44,Female,Breast cancer,Alcohol,2023-11-28,2023-08-20,2023-09-05,Medium,High,Medium
+27,Brian Davis,59,Male,None,Obese,2023-06-18,2022-04-11,2021-12-02,Low,Low,Medium
+28,Melissa Harris,38,Female,Ovarian cancer,Smoker,2024-02-28,2024-03-10,2023-10-25,High,High,Medium
+29,Eric Wilson,50,Male,Colon cancer,Smoker|Alcohol,2023-07-01,2022-06-14,2022-11-29,Low,Low,High
+30,Rachel Moore,45,Female,Breast cancer,None,2024-01-15,2023-07-30,2023-08-12,Medium,High,Medium
